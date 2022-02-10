@@ -1,0 +1,82 @@
+Option to start with two "randomised" dummy agents (onfile: male, archived: female). empty inventories, empty skills. Randomised bio. Name: REDACTED
+
+When initially spawning in: options to choose augment 1, augment 2, item 1, item 
+2 (generated from debug menu, with some changes, e.g. override stuff, also will display name rather than itemdef id)
+
+Repurpose Augment Grafter screen?
+
+Can pick appearance from a subset of appearance "styles": (can reroll randomly within that subset)
+- Suit
+- Dress (female only)
+- Tactical
+- Trenchcoat
+- RANDOM
+
+Within category, options:
+- Reroll
+- Done
+
+
+Portraits: very simplified, stylised, mostly shadow+silhouette but with some coloured highlights. Different hairstyle+helmet and colour variants
+
+
+Edge case: modular frame (set aug slots!)
+appennd install augment
+
+dialog screen for appearance change: make it shifted to the side so agent anim will be visible
+
+
+--------------------------------
+For modders, this will serve as a repository of agent parts to mix and match.
+Graphics:
+Hair colours: Blond, red, brown, black, white, neon blue
+Female hairstyles: short, mid, long, ponytail
+Male hairstyles: Short, short but fluffy, longish
+
+Optional accessories: goggles, light bracers (yellow, orange, blue), headset (part of hair for female, hat for male), helmet (tactical only), collar, hat (part of hair for female, hat for male)
+Skin colours: Light, mid, dark brown (face, neck, hands, legs, forearms)
+
+Suit colours: all made so far
+Dress colours: all made so far, + red, dark blue,
+Shoes: small shoes or boots
+Trenchcoat colours: Black (Decker, Banks), beige, purple, dark green, dark blue
+
+Tactical: 
+Female: enforcer3 bits
+Male: Pauldrons, helmet,
+Tactical: various guard bits recoloured into a cohesive colour scheme (black and grey?)
+
+
+
+
+Anim generation: 'Custom' agents will start with a set kanim ability that remembers preferences chosen at campaign start, and will set to that kanim on every onSpawn. ALSO access the animdef and set it to whatever is saved as the preference.
+ escape_mission script will wait for ability use and then save it in agency at end of mission.
+
+Animdefs will have two animdefs (1 male 1 female), but their build and grp tables will (in ability code) have more lines added to them for each body part.
+
+naming format for body part anim files:
+[colour]_[part_name].anim
+1_face
+2_forearm
+3_leg
+(1-3: skin colours from light to dark)
+
+or
+blond_hair
+red_hair
+brown_hair
+black_hair
+
+Process for anim generation:
+1. Roll skin colour
+2. Roll outfit type and add those parts from skin colour subset
+3. Roll hair colour, choose random hairstyle from that category
+4. Roll accessories
+
+
+Genny option:
+Linked pigmentation: Dark skin colour will only be matched with dark hair colour
+===============
+BIOS:
+
+
