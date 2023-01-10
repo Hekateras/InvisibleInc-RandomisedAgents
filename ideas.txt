@@ -1,3 +1,12 @@
+TO DO:
+- hair: female: DONE
+- hair: male
+- outfits, female
+- outfits, male
+- skins, female
+- skins, male
+
+
 Option to start with two "randomised" dummy agents (onfile: male, archived: female). empty inventories, empty skills. Randomised bio. Name: REDACTED
 
 When initially spawning in: options to choose augment 1, augment 2, item 1, item 
@@ -5,11 +14,23 @@ When initially spawning in: options to choose augment 1, augment 2, item 1, item
 
 Repurpose Augment Grafter screen?
 
+
+Generation steps:
+Assign 1 random additional starting skill
+Spawn and install one random augment (exempting Sharp's augments) and 2 items
+2 items: non-identical, no higher than tier 2, agent must have skills to use them
+
+Generic anim until randomised appearance is in place: Dark hoodie with cap (male), dark suit (female)
+
+
+
+
+
 Can pick appearance from a subset of appearance "styles": (can reroll randomly within that subset)
 - Suit
 - Dress (female only)
 - Tactical
-- Trenchcoat
+- Noir/Trenchcoat
 - RANDOM
 
 Within category, options:
@@ -33,18 +54,21 @@ Hair colours: Blond, red, brown, black, white, neon blue
 Female hairstyles: short, mid, long, ponytail
 Male hairstyles: Short, short but fluffy, longish
 
-Optional accessories: goggles, light bracers (yellow, orange, blue), headset (part of hair for female, hat for male), helmet (tactical only), collar, hat (part of hair for female, hat for male)
+Optional accessories: goggles, light bracers (yellow, orange, blue), headset (part of hair for female, hat for male), helmet (tactical only), collar, hat (part of hair for female, hat for male), beanie
 Skin colours: Light, mid, dark brown (face, neck, hands, legs, forearms)
 
 Suit colours: all made so far
 Dress colours: all made so far, + red, dark blue,
 Shoes: small shoes or boots
 Trenchcoat colours: Black (Decker, Banks), beige, purple, dark green, dark blue
+Hoodie
 
 Tactical: 
 Female: enforcer3 bits
 Male: Pauldrons, helmet,
 Tactical: various guard bits recoloured into a cohesive colour scheme (black and grey?)
+
+
 
 
 
@@ -77,6 +101,10 @@ Process for anim generation:
 Genny option:
 Linked pigmentation: Dark skin colour will only be matched with dark hair colour
 ===============
+Also customise tooltip?
+[E.g. 'Black Market Academic', 'Freedom Fighter', etc.]
 BIOS:
 
+Real name: [REDACTED]
 
+[XXX] found his way to 
